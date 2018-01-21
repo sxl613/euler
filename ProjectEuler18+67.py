@@ -94,7 +94,7 @@ def solveTriangle(path, n):
 	with open(path, 'r') as f:
 		for line in f:
 			triangle.append([int(i) for i in line.split()])
-	return maxSum_iterative(triangle, 100, 0, 0)
+	return maxSum_iterative(triangle, n, 0, 0)
 
 if __name__ == '__main__':
 	print(solveTriangle(input(), int(input())))
